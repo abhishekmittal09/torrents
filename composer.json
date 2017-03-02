@@ -1,0 +1,16 @@
+{
+  "name": "abhishekmittal09/torrents",
+  "description": "A system for downloading torrents.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "author's name",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "abhishekmittal09\\torrents\\": "src/"
+    }
+  }
+}
