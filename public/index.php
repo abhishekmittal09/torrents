@@ -20,6 +20,10 @@ if (isset($_POST['downloads'])) {
     }
 }
 
+if (isset($_POST['start_daemon'])) {
+    torrents\Daemon::start();
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -156,7 +160,7 @@ if (isset($_POST['downloads'])) {
                 <h1>Start Torrent Daemon</h1>
 
                 <form action="Daemon" method="post">
-                    <input class="btn btn-default" type="submit" value="Start"><br>
+                    <input class="btn btn-default" type="submit" name="start_daemon" value="Start"><br>
                 </form>
             </div>
         </div>
